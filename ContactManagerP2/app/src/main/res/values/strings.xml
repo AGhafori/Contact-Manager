@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ContactManagerPhase4</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_import">Import</string>
+    <string name="action_reset">Reinitialize</string>
+    <string name="action_new_contact">New Contact</string>
+    <string name="mapAddy">Map Address</string>
+    <string name="mapDone">Get Distance</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">Zip Code</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_map">mapActivity</string>
+    <string name="title_activity_second">SecondActivity</string>
+</resources>

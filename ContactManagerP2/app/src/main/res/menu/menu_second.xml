@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="utd.cs.contactmanagerp1.SecondActivity">
+    <item
+        android:id="@+id/action_mapAddy"
+        android:title="@string/mapAddy"
+        android:orderInCategory="100"
+        />
+</menu>

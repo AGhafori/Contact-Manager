@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SecondActivity"
+    tools:showIn="@layout/activity_second">
+
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/firstname" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/lastname"
+            android:layout_below="@id/first_name" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/phone"
+            android:layout_below="@id/last_name" />
+
+        <fragment
+            android:id="@+id/dob_fragment"
+            android:name="utd.cs.contactmanagerp1.BirthdayFragment"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/phone_number"
+            tools:layout="@layout/fragment_birthday" />
+
+        <fragment
+            android:id="@+id/first_date_fragment"
+            android:name="utd.cs.contactmanagerp1.FirstMetFragment"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/dob_fragment"
+            android:layout_marginBottom="10dp"
+            tools:layout="@layout/fragment_first_met" />
+
+        <EditText
+            android:id="@+id/address_firstLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/address"
+            android:layout_below="@id/first_date_fragment" />
+
+        <EditText
+            android:id="@+id/address_secondLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/address"
+            android:layout_below="@id/address_firstLine" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/city"
+            android:layout_below="@id/address_secondLine" />
+
+        <EditText
+            android:id="@+id/zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/zip"
+            android:layout_below="@id/city" />
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/state"
+            android:layout_below="@id/zip" />
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state"
+            android:onClick="saveClick"
+            android:elevation="2dp"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state"
+            android:layout_toEndOf="@id/save"
+            android:text="@string/delete" />
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/med"
+            android:hint="Distance to Contact"
+            android:layout_below="@id/delete"/>
+    <TextView
+        android:id="@+id/latlngView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/med"
+        android:hint="Lat and Lng"
+        android:layout_below="@id/resultView"/>
+
+    </RelativeLayout>

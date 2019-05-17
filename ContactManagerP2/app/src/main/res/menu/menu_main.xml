@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="utd.cs.contactmanagerp1.MainActivity">
+    <item
+        android:id="@+id/action_new_contact"
+        android:title="@string/action_new_contact"
+        android:orderInCategory="100"
+        />
+    <item
+        android:id="@+id/action_import"
+        android:title="@string/action_import"
+        android:orderInCategory="101"
+        />
+    <item
+        android:id="@+id/action_reset"
+        android:title="@string/action_reset"
+        android:orderInCategory="102"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="103"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+
+
+</menu>
